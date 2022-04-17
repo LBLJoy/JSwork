@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../jquery-3.6.0.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+        integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"
+        integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/csf.css">
+    <link rel="stylesheet" href="./css/top_bottom.css">
+    <link rel="stylesheet" href="http://at.alicdn.com/t/font_3302120_0wzv9exgen5d.css">
+    <link rel="stylesheet" href="./css/log-reg.css">
+    <title>注册</title>
+</head>
+
+<body>
+    <div class="warp active">
+        <div class="tip">
+            <div class="warp-title">隐私声明</div>
+            <div class="warp-content">
+                <ul>
+                    <li>我们根据法律法规要求对 《
+                        <a class="policy" href="http://www.yougou.com/help/privacypolicy.html">隐私条款</a>》
+                        进行了更新，以完善我们的线下店铺、App、小程序等服务涉及的个人信息处理规则，说明委托处理、共享和提供个人信息的情况，并对个人信息相关权利及其行使方式进行了更新。
+                    </li>
+                    <li>&nbsp;</li>
+                    <li>
+                        在您开始使用我们的产品和服务、访问我们的网站和应用程序前，请您仔细阅读并确认您已经充分理解及同意《
+                        <a class="policy" href="http://www.yougou.com/help/privacypolicy.html">隐私条款</a>》
+                        所载明的内容后再点击同意。如您不同意，可能无法继续使用本服务。如您有任何疑问，可通过《隐私政策》中的联系方式咨询我们。
+                    </li>
+                </ul>
+            </div>
+            <div class="btns">
+                <a class="disagree" href="./index.html">不同意，返回首页</a>
+                <a class="agree" href="javascript:void(0)">同意并继续</a>
+            </div>
+        </div>
+
+    </div>
+    <header>
+        <div class="header-inner">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8">
+                        <a href="javascript:void(0)">关注</a>
+                        <a href="javascript:void(0)">下载APP</a>
+                    </div>
+                    <div class="col-md-4">
+                        <ul class="clearfix">
+                            <li><a href="login.html">登录</a></li>
+                            <li><a href="register.html">注册</a></li>
+                            <li><a href="javascript:void(0)"><i class="iconfont icon-daohangshoucangyishoucang"></i>
+                                    收藏</a></li>
+                            <li><a href="javascript:void(0)"><i class="iconfont icon-gouwudai"></i>购物袋</a></li>
+                            <li><a href="javascript:void(0)">公告</a>
+                                <ul>
+                                    <li><a href="javascript:void(0)">近期物流情况安排通知</a></li>
+                                    <li><a href="javascript:void(0)">优购客服电话变更</a></li>
+                                    <li><a href="javascript:void(0)">提醒会员谨防诈骗电话</a></li>
+                                    <li><a href="javascript:void(0)">优购防诈骗声明</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="title">
+                <div class="container">
+                    <h2>
+                        <a href="javascript:void(0)">
+                            <img src="https://passport.yougou.com/template/common/images/usercenter/signin-register-logo.png"
+                                alt="">
+                        </a>
+                    </h2>
+                    <p>
+                        用户登录
+                    </p>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="log-reg">
+            <a href="javascript:void(0)"></a>
+            <div class="reg">
+                <ul class="tab clearfix">
+                    <li><a href="./login.html">登录</a></li>
+                    <li class="active"><a href="javascript:void(0)">注册</a></li>
+                </ul>
+                <div class="inform">
+                    <form action="javascript:void(0)">
+                        <div class="phone">
+                            <div class="tapin">
+                                <span>手机号</span>
+                                <input type="text" name="phone">
+                            </div>
+                            <p><i class="iconfont icon-jinzhide"></i>请输入账号</p>
+                        </div>
+                        <div class="tuyzm">
+                            <div class="tapin">
+                                <span>验证码</span>
+                                <input type="text" name="tuyzm">
+                            </div><img src="https://passport.yougou.com/servlet/imageCaptcha?rand=0.64931108567167"
+                                alt="">
+                            <p><i class="iconfont icon-jinzhide"></i>请输入验证码</p>
+                        </div>
+                        <div class="yzm">
+                            <div class="tapin">
+                                <span>短信验证码</span>
+                                <input type="text" name="yzm">
+                            </div>
+                            <span><a href="javascript:void(0)">获取验证码</a></span>
+                            <p><i class="iconfont icon-jinzhide"></i>请输入短信验证码</p>
+                        </div>
+                        <div class="password1">
+                            <div class="tapin">
+                                <span>密码</span>
+                                <input type="password" name="password1">
+                            </div>
+                            <p><i class="iconfont icon-jinzhide"></i>请输入密码</p>
+                            <div class="strength none">
+                                <em class="">低</em>
+                                <em class="">中</em>
+                                <em class="">高</em>
+                            </div>
+                        </div>
+                        <div class="password2">
+                            <div class="tapin">
+                                <span>确认密码</span>
+                                <input type="password" name="password2">
+                            </div>
+                            <p><i class="iconfont icon-jinzhide"></i>请输入确认密码</p>
+                        </div>
+                        <input type="checkbox" id="rules">
+                        <label for="rules" class="rules">
+                            我已阅读并同意《
+                            <a href="https://www.yougou.com/help/registrationagreement.html" style="color:red;">
+                                用户协议
+                            </a>》《
+                            <a href="http://www.yougou.com/help/privacypolicy.html" style="color:red;">
+                                隐私条款
+                            </a>》
+                            <span><i class="iconfont icon-jinzhide"></i>请阅读并同意交易条款</span>
+                        </label><br>
+                        <input type="checkbox" id="emrules">
+                        <label for="emrules" class="emrules">
+                            同意通过电子邮件、电话、短信、即时通信发送相关营销活动内容
+                            <span><i class="iconfont icon-jinzhide"></i>请阅读并同意交易条款</span>
+                        </label>
+                        <input type="button" value="确认并注册">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p class="tright">
+            Copyright © 2011-2014 Yougou Technology Co., Ltd.
+            <a href="http://www.miibeian.gov.cn" target="_blank">粤ICP备09070608号-4</a>
+            增值电信业务经营许可证：
+            <a href="http://www.miibeian.gov.cn" target="_blank" style="padding-left:0">
+                粤 B2-20090203</a>
+        </p>
+    </footer>
+    <script>
+        $(document).ready(function () {
+            $('.tip').addClass('active')
+        })
+        //公告
+        $('.header-inner .col-md-4>ul>li').eq(4).mouseenter(function () {
+            $('.header-inner .col-md-4>ul>li>ul').addClass('active')
+        })
+        $('.header-inner .col-md-4>ul>li>ul').mouseleave(function () {
+            $(this).removeClass('active')
+        })
+
+        //同意与否
+        $('body .warp .tip .btns a.agree').click(function () {
+            $(this).parents('.warp').addClass('disable')
+        })
+    </script>
+    <script>
+        //手机号验证
+        var phoneReTwo = /1[3578][01379]\d{8}/
+        var phoneReOne = /1[34578][01256]\d{8}/
+        var phoneThree = /134[012345678]\d{7}|1[34578][012356789]\d{8}/
+        $(".phone .tapin input").blur(function () {
+            var phone = $(this).val()
+            if (phone === '') {
+                $(this).parent().siblings('p').addClass('active').text("请输入手机号")
+                $(this).parent().addClass("active")
+            } else if (!phoneReTwo.test(phone) && !phoneReOne.test(phone) && !phoneThree.test(phone)) {
+                $(this).parent().siblings('p').addClass('active').text("格式错误")
+                $(this).parent().addClass("active")
+            } else {
+                $(this).parent().siblings('p').removeClass('active').text("1")
+                $(this).parent().removeClass("active")
+            }
+        })
+
+        //图片验证码验证
+        $(".tuyzm .tapin input").blur(function () {
+            var lock = $(this).val()
+            if (lock === '') {
+                $(this).parent().siblings('p').addClass('active').text("请输入验证码")
+                $(this).parent().addClass("active")
+            } else {
+                $(this).parent().siblings('p').removeClass('active').text("1")
+                $(this).parent().removeClass("active")
+            }
+        })
+
+        //短信验证码验证
+        $(".yzm .tapin input").blur(function () {
+            var lock = $(this).val()
+            if (lock === '') {
+                $(this).parent().siblings('p').addClass('active').text("请输入短信验证码")
+                $(this).parent().addClass("active")
+            } else {
+                $(this).parent().siblings('p').removeClass('active').text("1")
+                $(this).parent().removeClass("active")
+            }
+        })
+
+        //密码验证
+        $(".password1 input").blur(function () {
+            var lock = $(this).val()
+            $(".password1 input").triggerHandler("focus")
+            if (lock === '') {
+                $(this).parent().siblings('p').addClass('active').text("请输入密码")
+                $(this).parent().addClass("active")
+            } else if (lock.length < 6 || lock.length > 25) {
+                $(this).parent().siblings('p').addClass('active').text("密码应6 - 25 位之间")
+                $(this).parent().addClass("active")
+            } else {
+                $(this).parent().siblings('p').removeClass('active').text("1")
+                $(this).parent().removeClass("active")
+            }
+        })
+        var confirmPassword = false
+        $(".password2 input").blur(function () {
+            var lockOne = $(this).val()
+            var lockTwo = $(".password1 input").val()
+            if (lockOne === lockTwo && lockOne !== '') {
+                $(this).parent().siblings('p').addClass('active').text("")
+                $(this).parent().removeClass("active")
+                confirmPassword = true
+            } else {
+                $(this).parent().siblings('p').addClass('active').text("两次密码不一致")
+                $(this).parent().addClass("active")
+            }
+        })
+
+        //是否勾选或是否填全
+        $("body .log-reg .reg .inform input[type=button]").click(function () {
+            var shortMessage = $(".short-message .lock-input").val()
+            var isCheckedOne = $("#rules").prop('checked');
+            var isCheckedTwo = $("#emrules").prop('checked');
+            if (shortMessage === "dtea" && confirmPassword && isCheckedTwo && isCheckedOne) {
+                window.location.href = "./shouye.html"
+                shortMessage = ''
+            } else {
+                if (!isCheckedOne) $('body .log-reg .reg .inform label').eq(0).addClass('active')
+                if (!isCheckedTwo) $('body .log-reg .reg .inform label').eq(1).addClass('active')
+                $(".phone .tapin input").triggerHandler("blur")
+                $(".tuyzm .tapin input").triggerHandler("blur")
+                $(".yzm .tapin input").triggerHandler("blur")
+                $(".password1 input").triggerHandler("blur")
+                $(".password2 input").triggerHandler("blur")
+            }
+        })
+    </script>
+    <script>
+        document.querySelector(".password1 .tapin input").oninput = function () {
+            var input = $(this).val().length
+            $(".strength").removeClass("none")
+            if (input >= 6 && input <= 9) {
+                $(".strength em").eq(0).addClass("strength-low")
+                $(".strength em").eq(1).removeClass("strength-medium")
+                $(".strength em").eq(2).removeClass("strength-high")
+            } else if (input >= 10 && input <= 12) {
+                $(".strength em").eq(1).addClass("strength-medium")
+                $(".strength em").eq(2).removeClass("strength-high")
+            } else if (input > 12) {
+                $(".strength em").eq(2).addClass("strength-high")
+            } else {
+                $(".strength em").eq(0).removeClass("strength-low")
+                $(".strength em").eq(1).removeClass("strength-medium")
+                $(".strength em").eq(2).removeClass("strength-high")
+            }
+        }
+    </script>
+</body>
+
+</html>

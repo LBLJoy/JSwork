@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../jquery-3.6.0.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+        integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"
+        integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="http://at.alicdn.com/t/font_3262516_oixgt11iww9.css">
+    <link rel="stylesheet" href="http://at.alicdn.com/t/font_3302120_u6uwafpy4za.css">
+    <link rel="stylesheet" href="./css/csf.css">
+    <link rel="stylesheet" href="./css/top_bottom.css">
+    <link rel="stylesheet" href="./css/shopcar.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <div class="header-inner">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8">
+                        <a href="javascript:void(0)">关注</a>
+                        <a href="javascript:void(0)">下载APP</a>
+                    </div>
+                    <div class="col-md-4">
+                        <ul class="clearfix">
+                            <li><a href="login.html">登录</a></li>
+                            <li><a href="register.html">注册</a></li>
+                            <li><a href="javascript:void(0)"><i class="iconfont icon-daohangshoucangyishoucang"></i>
+                                    收藏</a></li>
+                            <li><a href="javascript:void(0)"><i class="iconfont icon-gouwudai"></i>购物袋</a></li>
+                            <li><a href="javascript:void(0)">公告</a>
+                                <ul>
+                                    <li><a href="javascript:void(0)">近期物流情况安排通知</a></li>
+                                    <li><a href="javascript:void(0)">优购客服电话变更</a></li>
+                                    <li><a href="javascript:void(0)">提醒会员谨防诈骗电话</a></li>
+                                    <li><a href="javascript:void(0)">优购防诈骗声明</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="title">
+                <div class="container">
+                    <h2></h2>
+                    <ul>
+                        <li class="active">我的购物袋<em></em><i></i></li>
+                        <li>提交订单中心<em></em><i></i></li>
+                        <li>成功提交订单</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="shop-item">
+                <div class="empty">
+                    <div class="nullCar">
+                        <img src="https://www.yougou.com/template/common/images/shopping-car.png" alt="">
+                    </div>
+                    <div class="des">
+                        <p class="nullItem"> 您的购物袋中暂无商品，赶快选择心爱的商品吧！ </p>
+                        <p class="return">
+                            <a href="./index.html" class="return_btn">回到首页</a>
+                        </p>
+                        <p class="look"> 您可以查看：</p>
+                        <p class="link">
+                            <a href="/my/favorites.jhtml">我的收藏夹</a>
+                            <a href="/my/order.jhtml">我已购买的商品</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="shopping-item active">
+                <table>
+                    <thead>
+                        <tr>
+                            <th><label><input type="checkbox">全选</label></th>
+                            <th>商品名称</th>
+                            <th>颜色尺码</th>
+                            <th>单价</th>
+                            <th>数量</th>
+                            <th>小计(元)</th>
+                            <th>操作</th>
+                        </tr>
+                    <tbody>
+                    </tbody>
+                    </thead>
+                </table>
+                <div class="choose">
+                    <label><input type="checkbox">全选</label>
+                    <a href="javascript:void(0)">移入收藏夹</a>
+                    <a href="javascript:void(0)">删除</a>
+                </div>
+                <div class="pay clearfix">
+                    <a href="javascript:void(0)">继续购物</a>
+                    <a class="del" href="javascript:void(0)">清空购物袋</a>
+                    <p><b>总计（不含运费） :￥</b>
+                        <price class="total"></price>
+                        <a href="javascript:void(0)">去结算</a>
+                    </p>
+                </div>
+            </div>
+            <div class="promise clearfix">
+                <div class="flr">
+                    <p>
+                        购物保障：
+                        <i class="iconfont icon-2"></i>
+                        100%正品
+                        <i class="iconfont icon-tuihuanhuo"></i>
+                        10天退换货
+                        <i class="iconfont icon-chajiafandian"></i>
+                        10天补差价
+                    </p>
+                    <p>优惠券/礼品卡在下一步使用</p>
+                    <p>
+                        <a href="/shoppingcart/shoppingcart_advise.jhtml">帮助我们改进购物流程</a>
+                    </p>
+                </div>
+            </div>
+            <div class="suggest">
+                <h3>购买了您购物袋中商品的顾客还买了</h3>
+                <div class="suggest-item-wrap">
+                    <h2>第1页，共 0 页</h2>
+                    <div class="suggest-item">
+                        <ul>
+                            <li>
+                                <a href="javascript:void(0)">
+                                    <img src="https://i2.ygimg.cn/pics/adidas/2022/yg101518808/yg101518808_01_s.jpg?4"
+                                        alt="">
+                                </a>
+                                <a href="javascript:void(0)">adidas Originals阿迪三叶草小童2022男小童TREFOIL
+                                    TEE短袖T恤H25246</a>
+                                <div class="price">
+                                    <p>￥ 199</p>
+                                    <div class="old">￥ 199</div>
+                                </div>
+                                <div class="addCar">
+                                    <a href="javascript:void(0)">加入购物车</a>
+                                    <div class="addCar-item">
+                                        <div class="close">
+                                            <a href="javascript:void(0)">
+                                                <i class="iconfont icon-guanbi"></i>
+                                            </a>
+                                        </div>
+                                        <p class="chima">
+                                            <span>尺码</span>
+                                            <a href="javascript:void(0)">L</a>
+                                            <a href="javascript:void(0)">XL</a>
+                                            <a href="javascript:void(0)">XXL</a>
+                                        </p>
+                                        <p class="shuliang">
+                                            <span>数量</span>
+                                            <a href="javascript:void(0)"></a>
+                                            <input type="text" value="1">
+                                            <a href="javascript:void(0)"></a>
+                                        </p>
+                                        <p><span>已选择</span><span
+                                                style="font-size: 16px; font-weight: bold; padding-left: 10px;">黑色</span>
+                                        </p>
+                                        <a href="javascript:void(0)">确定</a>
+                                        <div class="icon"></div>
+                                    </div>
+
+                                </div>
+
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">
+                                    <img src="https://i2.ygimg.cn/pics/adidas/2022/yg101518808/yg101518808_01_s.jpg?4"
+                                        alt="">
+                                </a>
+                                <a href="javascript:void(0)">adidas Originals阿迪三叶草小童2022男小童TREFOIL
+                                    TEE短袖T恤H25246</a>
+                                <div class="price">
+                                    <p>￥ 199</p>
+                                    <div class="old">￥ 199</div>
+                                </div>
+                                <div class="addCar">
+                                    <a href="javascript:void(0)">加入购物车</a>
+                                    <div class="addCar-item">
+                                        <div class="close">
+                                            <a href="javascript:void(0)">
+                                                <i class="iconfont icon-guanbi"></i>
+                                            </a>
+                                        </div>
+                                        <p class="chima">
+                                            <span>尺码</span>
+                                            <a href="javascript:void(0)">L</a>
+                                            <a href="javascript:void(0)">XL</a>
+                                            <a href="javascript:void(0)">XXL</a>
+                                        </p>
+                                        <p class="shuliang">
+                                            <span>数量</span>
+                                            <a href="javascript:void(0)"></a>
+                                            <input type="text" value="1">
+                                            <a href="javascript:void(0)"></a>
+                                        </p>
+                                        <p><span>已选择</span><span
+                                                style="font-size: 16px; font-weight: bold; padding-left: 10px;">黑色</span>
+                                        </p>
+                                        <a href="javascript:void(0)">确定</a>
+                                        <div class="icon"></div>
+                                    </div>
+
+                                </div>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">
+                                    <img src="https://i2.ygimg.cn/pics/adidas/2022/yg101518808/yg101518808_01_s.jpg?4"
+                                        alt="">
+                                </a>
+                                <a href="javascript:void(0)">adidas Originals阿迪三叶草小童2022男小童TREFOIL
+                                    TEE短袖T恤H25246</a>
+                                <div class="price">
+                                    <p>￥ 199</p>
+                                    <div class="old">￥ 199</div>
+                                </div>
+                                <div class="addCar">
+                                    <a href="javascript:void(0)">加入购物车</a>
+                                    <div class="addCar-item">
+                                        <div class="close">
+                                            <a href="javascript:void(0)">
+                                                <i class="iconfont icon-guanbi"></i>
+                                            </a>
+                                        </div>
+                                        <p class="chima">
+                                            <span>尺码</span>
+                                            <a href="javascript:void(0)">L</a>
+                                            <a href="javascript:void(0)">XL</a>
+                                            <a href="javascript:void(0)">XXL</a>
+                                        </p>
+                                        <p class="shuliang">
+                                            <span>数量</span>
+                                            <a href="javascript:void(0)"></a>
+                                            <input type="text" value="1">
+                                            <a href="javascript:void(0)"></a>
+                                        </p>
+                                        <p><span>已选择</span><span
+                                                style="font-size: 16px; font-weight: bold; padding-left: 10px;">黑色</span>
+                                        </p>
+                                        <a href="javascript:void(0)">确定</a>
+                                        <div class="icon"></div>
+                                    </div>
+
+                                </div>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">
+                                    <img src="https://i2.ygimg.cn/pics/adidas/2022/yg101518808/yg101518808_01_s.jpg?4"
+                                        alt="">
+                                </a>
+                                <a href="javascript:void(0)">adidas Originals阿迪三叶草小童2022男小童TREFOIL
+                                    TEE短袖T恤H25246</a>
+                                <div class="price">
+                                    <p>￥ 199</p>
+                                    <div class="old">￥ 199</div>
+                                </div>
+                                <div class="addCar">
+                                    <a href="javascript:void(0)">加入购物车</a>
+                                    <div class="addCar-item">
+                                        <div class="close">
+                                            <a href="javascript:void(0)">
+                                                <i class="iconfont icon-guanbi"></i>
+                                            </a>
+                                        </div>
+                                        <p class="chima">
+                                            <span>尺码</span>
+                                            <a href="javascript:void(0)">L</a>
+                                            <a href="javascript:void(0)">XL</a>
+                                            <a href="javascript:void(0)">XXL</a>
+                                        </p>
+                                        <p class="shuliang">
+                                            <span>数量</span>
+                                            <a href="javascript:void(0)"></a>
+                                            <input type="text" value="1">
+                                            <a href="javascript:void(0)"></a>
+                                        </p>
+                                        <p><span>已选择</span><span
+                                                style="font-size: 16px; font-weight: bold; padding-left: 10px;">黑色</span>
+                                        </p>
+                                        <a href="javascript:void(0)">确定</a>
+                                        <div class="icon"></div>
+                                    </div>
+
+                                </div>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">
+                                    <img src="https://i2.ygimg.cn/pics/adidas/2022/yg101518808/yg101518808_01_s.jpg?4"
+                                        alt="">
+                                </a>
+                                <a href="javascript:void(0)">adidas Originals阿迪三叶草小童2022男小童TREFOIL
+                                    TEE短袖T恤H25246</a>
+                                <div class="price">
+                                    <p>￥ 199</p>
+                                    <div class="old">￥ 199</div>
+                                </div>
+                                <div class="addCar">
+                                    <a href="javascript:void(0)">加入购物车</a>
+                                    <div class="addCar-item">
+                                        <div class="close">
+                                            <a href="javascript:void(0)">
+                                                <i class="iconfont icon-guanbi"></i>
+                                            </a>
+                                        </div>
+                                        <p class="chima">
+                                            <span>尺码</span>
+                                            <a href="javascript:void(0)">L</a>
+                                            <a href="javascript:void(0)">XL</a>
+                                            <a href="javascript:void(0)">XXL</a>
+                                        </p>
+                                        <p class="shuliang">
+                                            <span>数量</span>
+                                            <a href="javascript:void(0)"></a>
+                                            <input type="text" value="1">
+                                            <a href="javascript:void(0)"></a>
+                                        </p>
+                                        <p><span>已选择</span><span
+                                                style="font-size: 16px; font-weight: bold; padding-left: 10px;">黑色</span>
+                                        </p>
+                                        <a href="javascript:void(0)">确定</a>
+                                        <div class="icon"></div>
+                                    </div>
+
+                                </div>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">
+                                    <img src="https://i2.ygimg.cn/pics/adidas/2022/yg101518808/yg101518808_01_s.jpg?4"
+                                        alt="">
+                                </a>
+                                <a href="javascript:void(0)">adidas Originals阿迪三叶草小童2022男小童TREFOIL
+                                    TEE短袖T恤H25246</a>
+                                <div class="price">
+                                    <p>￥ 199</p>
+                                    <div class="old">￥ 199</div>
+                                </div>
+                                <div class="addCar">
+                                    <a href="javascript:void(0)">加入购物车</a>
+                                    <div class="addCar-item">
+                                        <div class="close">
+                                            <a href="javascript:void(0)">
+                                                <i class="iconfont icon-guanbi"></i>
+                                            </a>
+                                        </div>
+                                        <p class="chima">
+                                            <span>尺码</span>
+                                            <a href="javascript:void(0)">L</a>
+                                            <a href="javascript:void(0)">XL</a>
+                                            <a href="javascript:void(0)">XXL</a>
+                                        </p>
+                                        <p class="shuliang">
+                                            <span>数量</span>
+                                            <a href="javascript:void(0)"></a>
+                                            <input type="text" value="1">
+                                            <a href="javascript:void(0)"></a>
+                                        </p>
+                                        <p><span>已选择</span><span
+                                                style="font-size: 16px; font-weight: bold; padding-left: 10px;">黑色</span>
+                                        </p>
+                                        <a href="javascript:void(0)">确定</a>
+                                        <div class="icon"></div>
+                                    </div>
+
+                                </div>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">
+                                    <img src="https://i2.ygimg.cn/pics/adidas/2022/yg101518808/yg101518808_01_s.jpg?4"
+                                        alt="">
+                                </a>
+                                <a href="javascript:void(0)">adidas Originals阿迪三叶草小童2022男小童TREFOIL
+                                    TEE短袖T恤H25246</a>
+                                <div class="price">
+                                    <p>￥ 199</p>
+                                    <div class="old">￥ 199</div>
+                                </div>
+                                <div class="addCar">
+                                    <a href="javascript:void(0)">加入购物车</a>
+                                    <div class="addCar-item">
+                                        <div class="close">
+                                            <a href="javascript:void(0)">
+                                                <i class="iconfont icon-guanbi"></i>
+                                            </a>
+                                        </div>
+                                        <p class="chima">
+                                            <span>尺码</span>
+                                            <a href="javascript:void(0)">L</a>
+                                            <a href="javascript:void(0)">XL</a>
+                                            <a href="javascript:void(0)">XXL</a>
+                                        </p>
+                                        <p class="shuliang">
+                                            <span>数量</span>
+                                            <a href="javascript:void(0)"></a>
+                                            <input type="text" value="1">
+                                            <a href="javascript:void(0)"></a>
+                                        </p>
+                                        <p><span>已选择</span><span
+                                                style="font-size: 16px; font-weight: bold; padding-left: 10px;">黑色</span>
+                                        </p>
+                                        <a href="javascript:void(0)">确定</a>
+                                        <div class="icon"></div>
+                                    </div>
+
+                                </div>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">
+                                    <img src="https://i2.ygimg.cn/pics/adidas/2022/yg101518808/yg101518808_01_s.jpg?4"
+                                        alt="">
+                                </a>
+                                <a href="javascript:void(0)">adidas Originals阿迪三叶草小童2022男小童TREFOIL
+                                    TEE短袖T恤H25246</a>
+                                <div class="price">
+                                    <p>￥ 199</p>
+                                    <div class="old">￥ 199</div>
+                                </div>
+                                <div class="addCar">
+                                    <a href="javascript:void(0)">加入购物车</a>
+                                    <div class="addCar-item">
+                                        <div class="close">
+                                            <a href="javascript:void(0)">
+                                                <i class="iconfont icon-guanbi"></i>
+                                            </a>
+                                        </div>
+                                        <p class="chima">
+                                            <span>尺码</span>
+                                            <a href="javascript:void(0)">L</a>
+                                            <a href="javascript:void(0)">XL</a>
+                                            <a href="javascript:void(0)">XXL</a>
+                                        </p>
+                                        <p class="shuliang">
+                                            <span>数量</span>
+                                            <a href="javascript:void(0)"></a>
+                                            <input type="text" value="1">
+                                            <a href="javascript:void(0)"></a>
+                                        </p>
+                                        <p><span>已选择</span><span
+                                                style="font-size: 16px; font-weight: bold; padding-left: 10px;">黑色</span>
+                                        </p>
+                                        <a href="javascript:void(0)">确定</a>
+                                        <div class="icon"></div>
+                                    </div>
+
+                                </div>
+
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">
+                                    <img src="https://i2.ygimg.cn/pics/adidas/2022/yg101518808/yg101518808_01_s.jpg?4"
+                                        alt="">
+                                </a>
+                                <a href="javascript:void(0)">adidas Originals阿迪三叶草小童2022男小童TREFOIL
+                                    TEE短袖T恤H25246</a>
+                                <div class="price">
+                                    <p>￥ 199</p>
+                                    <div class="old">￥ 199</div>
+                                </div>
+                                <div class="addCar">
+                                    <a href="javascript:void(0)">加入购物车</a>
+                                    <div class="addCar-item">
+                                        <div class="close">
+                                            <a href="javascript:void(0)">
+                                                <i class="iconfont icon-guanbi"></i>
+                                            </a>
+                                        </div>
+                                        <p class="chima">
+                                            <span>尺码</span>
+                                            <a href="javascript:void(0)">L</a>
+                                            <a href="javascript:void(0)">XL</a>
+                                            <a href="javascript:void(0)">XXL</a>
+                                        </p>
+                                        <p class="shuliang">
+                                            <span>数量</span>
+                                            <a href="javascript:void(0)"></a>
+                                            <input type="text" value="1">
+                                            <a href="javascript:void(0)"></a>
+                                        </p>
+                                        <p><span>已选择</span><span
+                                                style="font-size: 16px; font-weight: bold; padding-left: 10px;">黑色</span>
+                                        </p>
+                                        <a href="javascript:void(0)">确定</a>
+                                        <div class="icon"></div>
+                                    </div>
+
+                                </div>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">
+                                    <img src="https://i2.ygimg.cn/pics/adidas/2022/yg101518808/yg101518808_01_s.jpg?4"
+                                        alt="">
+                                </a>
+                                <a href="javascript:void(0)">adidas Originals阿迪三叶草小童2022男小童TREFOIL
+                                    TEE短袖T恤H25246</a>
+                                <div class="price">
+                                    <p>￥ 199</p>
+                                    <div class="old">￥ 199</div>
+                                </div>
+                                <div class="addCar">
+                                    <a href="javascript:void(0)">加入购物车</a>
+                                    <div class="addCar-item">
+                                        <div class="close">
+                                            <a href="javascript:void(0)">
+                                                <i class="iconfont icon-guanbi"></i>
+                                            </a>
+                                        </div>
+                                        <p class="chima">
+                                            <span>尺码</span>
+                                            <a href="javascript:void(0)">L</a>
+                                            <a href="javascript:void(0)">XL</a>
+                                            <a href="javascript:void(0)">XXL</a>
+                                        </p>
+                                        <p class="shuliang">
+                                            <span>数量</span>
+                                            <a href="javascript:void(0)"></a>
+                                            <input type="text" value="1">
+                                            <a href="javascript:void(0)"></a>
+                                        </p>
+                                        <p><span>已选择</span><span
+                                                style="font-size: 16px; font-weight: bold; padding-left: 10px;">黑色</span>
+                                        </p>
+                                        <a href="javascript:void(0)">确定</a>
+                                        <div class="icon"></div>
+                                    </div>
+
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <a href="javascript:void(0)"><i class="iconfont icon-xiangzuojiantou"></i></a>
+                    <a href="javascript:void(0)"><i class="iconfont icon-xiangyoujiantou"></i></a>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <p class="tright">
+                Copyright © 2011-2014 Yougou Technology Co., Ltd.
+                <a href="http://www.miibeian.gov.cn" target="_blank">粤ICP备09070608号-4</a>
+                增值电信业务经营许可证：
+                <a href="http://www.miibeian.gov.cn" target="_blank" style="padding-left:0">
+                    粤 B2-20090203</a>
+            </p>
+        </footer>
+    </main>
+    <script src="./js/1.js"></script>
+    <script>
+        show()
+        changeCost()
+        // 商品总价更改
+        function changeCost() {
+            var cost = 0
+            $('table tr td:nth-child(6)').each(function () {
+                cost = cost + parseInt($(this).text())
+            })
+            $('price.total').text(cost)
+        }
+
+        // 展示已加购商品
+        function show() {
+            for (var i = 0; i < shopItem.length; i++) {
+                var total = shopItem[i].price * shopItem[i].count
+                $('main .container table tbody').append(`<tr><td><div class='xuan'><input type="checkbox">\</div><img src="${shopItem[i].imgPath}"></td><td><a href='javascript:void(0)'>${shopItem[i].des}</a></td><td>${shopItem[i].color_size}</td><td>${shopItem[i].price}</td><td><a class='reduce btn' href='javascript:void(0)'>-</a><input class='countShow' value='${shopItem[i].count}'><a class='add btn' href='javascript:void(0)'>+</a></td><td class='xiaoji'>${total}</td><td><a href='javascript:void(0)' class='del'>移入收藏夹</a><br><a href='javascript:void(0)' class='del'>删除</a></td></tr>`)
+            }
+        }
+
+
+        $('td').click(function (e) {
+            var targetDom = e.target
+            // 减号
+            if (targetDom.tagName === 'A' && targetDom.classList.contains('reduce') && targetDom.innerText === '-') {
+                targetDom = $(targetDom)
+                var ind = $(targetDom).parents('tr').index()
+                var value = $(targetDom).siblings('input').val()
+                if (value <= 1) console.log(1);
+                else {
+                    value--
+                    shopItem[ind].count--
+                    $(targetDom).parents('td').siblings('.xiaoji').text(shopItem[ind].count * shopItem[ind].price);
+                    $(targetDom).siblings('input').val(value)
+                    changeCost()
+                }
+            }
+            // 加号
+            if (targetDom.tagName === 'A' && targetDom.classList.contains('add') && targetDom.innerText === '+') {
+                targetDom = $(targetDom)
+                var ind = $(targetDom).parents('tr').index()
+                var value = $(targetDom).siblings('input').val()
+                if (value >= 10) console.log(10);
+                else {
+                    value++
+                    shopItem[ind].count++
+                    $(targetDom).parents('td').siblings('.xiaoji').text(shopItem[ind].count * shopItem[ind].price);
+                    $(targetDom).siblings('input').val(value)
+                    changeCost()
+                }
+            }
+            // 删除
+            if (targetDom.tagName === 'A' && targetDom.classList.contains('del')) {
+                targetDom = $(targetDom)
+                $(targetDom).parents('tr').remove()
+                judge()
+                changeCost()
+            }
+        })
+
+
+
+        // 若没有商品则显示无商品
+        function judge() {
+            if ($('table tbody tr').length === 0) {
+                $('.shopping-item').removeClass('active')
+                $('.shop-item').addClass('active')
+            }
+        }
+
+        // 全选反选
+        $('th label input, .choose input').click(function () {
+            var isChecked = $(this).prop("checked")
+            if (isChecked) {
+                $('.xuan input').each(function () {
+                    $(this).prop("checked", true)
+                    $('th label input, .choose input').prop("checked", true)
+                })
+            } else {
+                $('.xuan input').each(function () {
+                    $(this).prop("checked", false)
+                    $('th label input, .choose input').prop("checked", false)
+                })
+            }
+        })
+
+        // 推荐中
+        // 点击弹出
+        $('.suggest-item .addCar>a').click(function () {
+            $(this).siblings('.addCar-item').slideDown(100)
+        })
+        // 点击叉子关闭
+        $('.addCar-item .close').click(function () {
+            $(this).parents('.addCar-item').slideUp(100)
+        })
+        // 选中尺码
+        $('.chima a').click(function () {
+            $(this).addClass('chosen').siblings().removeClass('chosen')
+        })
+        // 选择数量
+        // 减
+        $('.shuliang a').eq(0).click(function () {
+            var value = $(this).siblings('input').val()
+            if (value <= 1) console.log(1);
+            else {
+                value--
+                $(this).siblings('input').val(value)
+            }
+        })
+        // 加
+        $('.shuliang a').eq(1).click(function () {
+            var value = $(this).siblings('input').val()
+            if (value >= 10) console.log(10);
+            else {
+                value++
+                $(this).siblings('input').val(value)
+            }
+        })
+
+        // 添加购物车
+        $('.addCar-item>a').click(function () {
+            var imgPath = $(this).parents('li').children('a').eq(0).find('img').attr('src')
+            var des = $(this).parents('li').children('a').eq(1).text()
+            var color_size = `颜色：${$(this).siblings('p').eq(2).text()}<br>尺码：${$(this).siblings('.chima').find('.chosen').text()}`
+            var count = parseInt($(this).siblings('.shuliang').find('input').val())
+            var add = { imgPath, des, color_size, color_size, count }
+            $('table tbody').empty()
+            shopItem.push(add)
+            show()
+        })
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,493 @@
+header .header-inner .title h2 {
+    width: 355px;
+    height: 50px;
+    background-image: url(https://pcs2.ygimg.cn/template/common/images/logo.jpg?bf701d76899056f1c76928124aa7f2a7);
+    border: none;
+}
+
+header .header-inner .title ul {
+    display: inline-block;
+}
+
+header .header-inner .title ul li {
+    float: left;
+    width: 200px;
+    position: relative;
+    text-align: center;
+    background-color: #ddd;
+}
+
+header .header-inner .title ul li.active {
+    color: #fff;
+    background: #333;
+    z-index: 3;
+}
+
+header .header-inner .title ul li em {
+    right: -12px;
+    top: -4px;
+    z-index: 5;
+    border: 12px dashed transparent;
+    border-left: 12px solid #fff;
+    border-right: 0;
+    width: 0;
+    height: 0;
+    line-height: 0;
+    position: absolute;
+}
+
+header .header-inner .title ul li i {
+    right: -9px;
+    top: -.3px;
+    z-index: 8;
+    border: 8.9px dashed transparent;
+    border-left: 10px solid #ddd;
+    border-right: 0;
+    width: 0;
+    height: 0;
+    line-height: 0;
+    position: absolute;
+}
+
+header .header-inner .title ul li.active i {
+    border-color: transparent transparent transparent #333;
+}
+
+header .header-inner .title {
+    border: none;
+}
+
+
+
+main .shop-item {
+    border: 1px solid #f1f1f1;
+    padding: 30px;
+    width: 930px;
+    margin: 0 auto;
+    display: none;
+}
+
+main .shop-item.active {
+    display: block;
+}
+
+main .empty {
+    margin: 0 auto;
+    width: 400px;
+}
+
+main .empty .des p.nullItem {
+    padding-top: 20px;
+    font-size: 14px;
+}
+
+main .empty .des p.return {
+    margin-top: 10px;
+}
+
+main .empty .des p.return a.return_btn {
+    background: #333;
+    border: 1px solid #333;
+    border-radius: 3px;
+    width: 90px;
+    height: 26px;
+    display: block;
+    font: bold 14px/26px '';
+    text-align: center;
+    color: #fff;
+}
+
+
+main .empty .des p.look {
+    margin-top: 30px;
+    font-size: 14px;
+}
+
+main .empty .des p.link a {
+    margin-top: 15px;
+    font-size: 12px;
+    color: #333;
+}
+
+main .empty .des p.link a:hover {
+    text-decoration: none;
+}
+
+main .promise {
+    width: 930px;
+    margin: 0 auto;
+}
+
+main .promise .flr {
+    float: right;
+    font-size: 12px;
+    color: #333;
+}
+
+main .promise .flr a {
+    color: #333;
+}
+
+main .promise .flr a:hover {
+    color: #333;
+    text-decoration: none;
+}
+
+main .container .shopping-item.active {
+    display: block;
+}
+
+main .container .shopping-item {
+    padding: 0;
+    width: 988px;
+    padding-bottom: 10px;
+    margin: 0 auto;
+    border: 3px solid #eee;
+    border-bottom: 0;
+    border-width: 1px 1px 0;
+    display: none;
+}
+
+main .container .shopping-item table .xuan {
+    display: inline;
+    margin-right: 10px;
+}
+
+main .container .shopping-item table {
+    font-size: 12px;
+}
+
+input[type=checkbox] {
+    vertical-align: middle;
+}
+
+
+main .container .shopping-item table img {
+    border: 1px solid #e6e6e6;
+    padding: 5px;
+    background: #fff;
+    vertical-align: middle;
+    width: 72px;
+}
+
+main .container .shopping-item table thead tr {
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+}
+
+main .container .shopping-item table th:nth-child(2) {
+    width: 370px;
+}
+
+main .container .shopping-item table th:nth-child(1) {
+    text-align: left;
+}
+
+main .container .shopping-item table th {
+    text-align: center;
+    width: 110px;
+}
+
+/* main .container .shopping-item table td:first-child {
+    position: relative;
+}
+
+main .container .shopping-item table td:first-child input,
+main .container .shopping-item table td:first-child i {
+    position: absolute;
+} */
+
+main .container .shopping-item table td {
+    text-align: center;
+}
+
+main .container .shopping-item table td .btn {
+    border: 1px solid #ccc;
+    color: #000;
+    outline: 0;
+    font-size: 16px;
+    margin: 0;
+    height: 22px;
+    width: 22px;
+    line-height: 6px;
+}
+
+main .container .shopping-item table td a {
+    font-size: 12px;
+    color: #333;
+}
+
+main .container .shopping-item table .countShow {
+    width: 28px;
+    height: 22px;
+    font-size: 12px;
+    text-align: center;
+    border: 1px solid #c6c6c6;
+}
+
+main .container .choose label,
+main .container .choose a {
+    height: 30px;
+    padding: 10px 37px 0 0;
+    color: #333;
+    font-size: 12px;
+}
+
+input {
+    vertical-align: middle;
+}
+
+main .container .pay {
+    height: 54px;
+    background: #eee;
+    overflow: hidden;
+}
+
+main .container .pay>a {
+    width: 72px;
+    height: 21px;
+    display: inline-block;
+    font-size: 12px;
+    text-align: center;
+    background: #333;
+    color: #fff;
+    line-height: 21px;
+    margin-top: 15px;
+}
+
+main .container .pay p {
+    float: right;
+    font-size: 14px;
+}
+
+main .container .pay p price .total {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+main .container .pay p>a {
+    display: inline-block;
+    width: 129px;
+    height: 54px;
+    background: #333;
+    text-indent: 0;
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+    line-height: 54px;
+    margin-left: 50px;
+}
+
+main .container .suggest {
+    width: 970px;
+    margin: 0 auto;
+}
+
+main .container .suggest h3 {
+    font-size: 16px;
+}
+
+main .container .suggest .suggest-item-wrap {
+    border: 1px solid #e6e6e6;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+main .container .suggest .suggest-item-wrap h2 {
+    text-align: right;
+    font-size: 12px;
+    color: #999;
+    margin: 0;
+    margin-top: 5px;
+}
+
+main .container .suggest .suggest-item-wrap .suggest-item {
+    width: 920px;
+    margin: auto;
+    height: 600px;
+}
+
+main .container .suggest .suggest-item-wrap a {
+    color: #666;
+}
+
+main .container .suggest .suggest-item-wrap i {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 26px;
+}
+
+main .container .suggest .suggest-item-wrap .icon-xiangyoujiantou {
+    left: unset;
+    right: 0;
+}
+
+main .container .suggest .suggest-item li {
+    display: inline-block;
+    text-align: center;
+    width: 180px;
+}
+
+main .container .suggest .suggest-item li>a {
+    font-size: 12px;
+    color: #666;
+}
+
+main .container .suggest .suggest-item li p {
+    display: inline-block;
+    font-weight: bold;
+}
+
+main .container .suggest .suggest-item li .old {
+    display: inline-block;
+    text-decoration: line-through;
+}
+
+main .container .suggest .suggest-item li .addCar {
+    position: relative;
+}
+
+main .container .suggest .suggest-item li .addCar>a {
+    text-align: center;
+    width: 100px;
+    height: 28px;
+    line-height: 28px;
+    display: block;
+    border: 1px solid #d8d8d8;
+    background: #fefdfd;
+    border-radius: 3px;
+    outline: 0;
+    margin: 0 auto;
+    font-size: 12px;
+}
+
+main .container .suggest .suggest-item .addCar .addCar-item.active {
+    display: block;
+}
+
+main .container .suggest .suggest-item .addCar .addCar-item {
+    background: #fff;
+    border: 1px solid #ccc;
+    position: absolute;
+    width: 450px;
+    z-index: 999;
+    padding: 15px;
+    top: -158px;
+    display: none;
+}
+
+main .container .suggest .suggest-item .addCar .addCar-item .close {
+    font-size: 12px;
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    right: 10px;
+    top: 10px;
+}
+
+main .container .suggest .suggest-item .addCar .addCar-item .close i {
+    font-size: 12px;
+    color: #000;
+}
+
+main .container .suggest .suggest-item .addCar .addCar-item .icon {
+    width: 17px;
+    height: 9px;
+    position: absolute;
+    left: 100px;
+    top: auto;
+    bottom: -9px;
+    background: url(http://pcs2.ygimg.cn/template/common/images/shopcart-sprite-v4.png?ec134af836c26e3b6aa8e6f933135912) no-repeat;
+    background-position: -103px -183px;
+}
+
+main .container .suggest .suggest-item .addCar .addCar-item p {
+    display: block;
+    text-align: left;
+    font-size: 12px;
+    font-weight: normal;
+}
+
+main .container .suggest .suggest-item .addCar .addCar-item p.chima>a.chosen {
+    border: 1px solid #333;
+    color: #333;
+}
+
+main .container .suggest .suggest-item .addCar .addCar-item p.chima>a {
+    border: 1px solid #ececec;
+    min-width: 24px;
+    width: auto !important;
+    width: 24px;
+    overflow: visible;
+    height: 18px;
+    line-height: 18px;
+    padding: 0 4px 0 4px;
+    margin-bottom: 10px;
+    background: #fff;
+    margin-right: 10px;
+    text-align: center;
+}
+
+main .container .suggest .suggest-item .addCar .addCar-item p.shuliang>a {
+    margin-right: 2px;
+    display: inline-block;
+    width: 11px;
+    height: 11px;
+    overflow: hidden;
+    vertical-align: middle;
+    background: url(https://pcs2.ygimg.cn/template/common/images/jiajian.gif?1ccf647950ba4aa0f719fc5b148d7d3c) no-repeat;
+    background-position: -11px 0;
+}
+
+main .container .suggest .suggest-item .addCar .addCar-item p.shuliang input {
+    border: 1px solid #ddd;
+    width: 25px;
+    height: 17px;
+    line-height: 17px;
+    text-align: center;
+}
+
+main .container .suggest .suggest-item .addCar .addCar-item p.shuliang>a:last-child {
+    background-position: -11px -11px;
+}
+
+main .container .suggest .suggest-item .addCar .addCar-item>a {
+    width: 80px;
+    height: 26px;
+    cursor: pointer;
+    float: left;
+    line-height: 26px;
+    overflow: hidden;
+    background-color: #000;
+    color: #fff;
+    border-radius: 2px;
+}
+
+
+
+
+
+
+footer {
+    font-size: 12px;
+    margin-top: 20px;
+    line-height: 20px;
+    text-align: center;
+}
+
+footer a {
+    padding: 0 20px;
+    color: #aaa;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: none;
+    color: #aaa;
+}

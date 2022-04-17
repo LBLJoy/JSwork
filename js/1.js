@@ -1,0 +1,31 @@
+var shopItem = [{
+    imgPath: './img/01_t.jpg',
+    des: '百丽潮酷骑士靴女2021冬新厚底休闲英伦风长筒靴B0662DG1',
+    color_size: '颜色：黑色-绒里<br>尺码：37',
+    price: 677,
+    count: 1
+}, {
+    imgPath: './img/012_t.jpg',
+    des: 'Teenmix/天美意2021冬新款商场同款秀气英伦时装马丁靴女皮短靴CO551DD1',
+    color_size: '颜色：白/灰<br>尺码：38',
+    price: 382,
+    count: 2
+}, {
+    imgPath: './img/0123_t.jpg',
+    des: '百丽2021夏新女时尚帅气厚底运动风休闲老爹鞋B0342BM1',
+    color_size: '颜色：白色<br>尺码：39',
+    price: 441,
+    count: 5
+}, {
+    imgPath: './img/01234_t.jpg',
+    des: 'Tata/他她2022夏商场同款网面老爹鞋厚底女休闲鞋新Y9A01BM2',
+    color_size: '颜色：黑色<br>尺码：40',
+    price: 520,
+    count: 1
+}, {
+    imgPath: './img/012345_t.jpg',
+    des: 'Teenmix/天美意2021冬新款时尚切尔西靴女皮中靴CO553DD1',
+    color_size: '颜色：米色<br>尺码：41',
+    price: 314,
+    count: 2
+}]
